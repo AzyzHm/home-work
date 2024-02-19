@@ -1,0 +1,17 @@
+tr:first-child{
+    background: pink;
+}
+table,th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+td{
+    width: 100%;
+}
+.les-trimestres{
+    background: green;
+}
+.les-matières{
+    background: yellow;
+}

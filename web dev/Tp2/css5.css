@@ -1,0 +1,5 @@
+h1,h2,h3{font-family: "lucida callgraphy", verdana, arial;}
+p,table, li{font-family: "lucida callgraphy", verdana, arial; margin-left:10pt;}
+p,li,th,td{font-size: 80%;}
+th{background-color: #FAEBD7;}
+body{background-color: #fffaf0;}

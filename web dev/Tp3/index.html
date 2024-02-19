@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div id="container">
+        <form  id="form" method="get">
+            <h1>Registration Form</h1>
+            <div class="form-group">
+                <label for="name">Fullname</label>
+                <input type="text" id="name" placeholder="Enter Fullname">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="TN" selected>Tunisia</option>
+                    <option value="FR">France</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="avatar">Avatar</label>
+                <input type="file" id="avatar">
+            </div>
+            <div class="form-group">
+                <label for="overnightStay">Overnight stay</label>
+                <input type="number" id="overnightStay">
+            </div>
+            <div class="form-group">
+                <label for="rate">Rate</label>
+                <input type="number" id="rate" min="1" max="5">
+            </div>
+            <div class="form-group">
+                <label for="amountToPay">Amount to pay</label>
+                <input type="number" id="amountToPay" readonly value="0">
+            </div>
+            <div class="form-group">
+                <button type="reset" id="reset">Cancel</button>
+                <button type="submit" id="submit">create</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

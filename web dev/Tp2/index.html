@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style-link" rel="stylesheet" href="default.css">
+    <title>css en action</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #left-frame {
+            width: 25%;
+            border: 1px solid #ccc;
+        }
+
+        #right-frame {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+        .small-frame {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left-frame">
+            <h3>cliquer sur les style:</h3>
+            <a href="#" onclick="applyStyle('css1.css')">avec Style 1</a><br>
+            <a href="#" onclick="applyStyle('css2.css')">avec Style 2</a><br>
+            <a href="#" onclick="applyStyle('css3.css')">avec Style 3</a><br>
+            <a href="#" onclick="applyStyle('css4.css')">avec Style 4</a><br>
+            <a href="#" onclick="applyStyle('css5.css')">avec Style 5</a><br>
+            <p>Visualiser les feuilles</p>
+            <a href="css1.css">Style 1</a><br>
+            <a href="css2.css">Style 2</a><br>
+            <a href="css3.css">Style 3</a><br>
+            <a href="css4.css">Style 4</a><br>
+            <a href="css5.css">Style 5</a>
+            <script>
+                function applyStyle(styleSheet) {
+                var styleLink = document.getElementById('style-link');
+                styleLink.href = styleSheet;
+                    }
+            </script>
+        </div>
+        <div id="right-frame">
+            <div id="small-frame">
+                <h1>c'est l'entete</h1>
+            </div>
+            <div id="small-frame">
+                <p>c'est un paragraphe</p>
+                <p>c'est un autre paragraphe</p>
+            </div>
+            <div id="small-frame">
+                <h2>c'est l'entete 2 suivi d'une table</h2>
+                <table>
+                    <tr>
+                        <th>nom</th>
+                        <th>prenom</th>
+                        <th>telephone</th>
+                        <th>fax</th>
+                    </tr>
+                    <tr>
+                        <td>ben salah</td>
+                        <td>Mohamed</td>
+                        <td>93-555-777</td>
+                        <td>20-777-000</td>
+                    </tr>
+                    <tr>
+                        <td>ben salah</td>
+                        <td>Mohamed</td>
+                        <td>93-555-777</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="small-frame">
+                <h3>c'est l'entete 2 suivi d'une table</h3>
+                    <ul>
+                        <li>php</li>
+                        <li>xml</li>
+                    </ul>
+                    <ul>
+                        <li>thé</li>
+                        <li>lait</li>
+                        <li>café</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

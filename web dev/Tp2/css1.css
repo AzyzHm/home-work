@@ -1,0 +1,10 @@
+h1,h2,h3{font-family: verdana, arial;}
+p,table, li{font-family: verdana, arial; margin-left:10pt;}
+ul{list-style: disc;}
+ol{list-style: disc;}
+p,li,th,td{font-size: 75%;}
+h1,h2,h3{color: black;}
+a:link{color:black}
+a:visited{color:black}
+a:active{color:mediumblue}
+a:hover{color:mediumblue}
